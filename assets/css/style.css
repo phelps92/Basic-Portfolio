@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    background-color: black;
+    text-anchor: white;
+}
+.about-contact{
+    background-color: rgb(255, 0, 13)
+}
+.about {
+    float: left;
+    width: 70%;
+
+}
+
+.contact {
+    float: right;
+    width: 30%;
+}
+
