@@ -3,82 +3,64 @@
 <html lang="en-us">
 
 <head>
+    <meta charset="UTF-8">
+    <title>About | Zachary Phelps</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    </style>
 </head>
 
 <body>
     <header>
-        <h1 id="name">Zach Phelps</h1>
-    </header>
-    <div class="everything">
-        <div class="nav">
-            <ul class="nav-bar">
-                <li class="nav-list">
-                    <a href="./index.html">About</a>
-                </li>
-                <li class="nav-list">
-                    <a href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-list">
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="clear">
+        <div class="container">
+            <a href="index.html" id="logo">Zachary Phelps</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <div class="form">
-
-                <form action="/action_page.php">
-                    Name:
-                    <br />
-                    <input type="text" name="Name" value="John Smith">
-                    <br /> Email:
-                    <br />
-                    <input type="text" name="Email" value="example@gmail.com">
-                    <br /> Message:
-                    <br />
-                    <textarea name="message" rows="10" cols="30"></textarea>
-                    <br />
-                    <br />
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="contact-links">
-                <h2> Connect with Me </h2>
-                <ul>
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/zachary-phelps-78543a151/">
-                            <li>
-                                <img src="./assets/images/if_linkedin_square_color_107091.png" alt="linkedin image" width: 50px; length: 50px;>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="github">
-                        <a class "github" href="https://github.com/phelps92">
-                            <li>
-                                <img src="./assets/images/github-128.png" alt="github image" width: 50px; length: 50px;>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="stack">
-                        <a href="https://stackoverflow.com/users/9275226/zach-phelps">
-                            <li>
-                                <img src="./assets/images/if_stackoverflow_273179.png" alt="stackoverflow image" width: 50px; length: 50px;>
-                        </a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
         </div>
-    </div>
-
-
-
-    <footer class="footer">&copy; Copyright 2016 Zachary Phelps</footer>
-</body>
-
-
-</html>
+    </header>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
+        </section>
+        <section class="sidebar">
+                <div id="connect">
+                    <h2>Connect with Me</h2>
+                    <a href="https://github.com/phelps92">
+                        <img src="assets/images/github-128.png" class="social" alt="GitHub" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/zachary-phelps-78543a151/">
+                        <img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" />
+                    </a>
+                    <a href="https://stackoverflow.com/users/9275226/zach-phelps">
+                        <img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" />
+                    </a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="container">
+                Copyright &copy; 2017 Zachary Phelps
+            </div>
+        </footer>
+    </body>
+    
+    </html>
